@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>Tecnologías Web APIs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/stilos.css">
+<link rel="stylesheet" type="text/css" href="js/script.js">
+</head>
+
+<body style="padding-top:80px;">
+
+
+<!-- ======================= -->
+<!-- NAVBAR -->
+<!-- ======================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Web Technologies</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav">
+
+
+<!-- Web APIs -->
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+1. Web APIs
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#api">API</a></li>
+<li><a class="dropdown-item" href="#http">HTTP</a></li>
+
+</ul>
+
+</li>
+
+
+<!-- SOAP -->
+<li class="nav-item">
+
+<a class="nav-link" href="#soap">
+2. SOAP
+</a>
+
+</li>
+
+
+<!-- REST -->
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+3. REST
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#rest">REST</a></li>
+<li><a class="dropdown-item" href="#restful">RESTful</a></li>
+
+</ul>
+
+</li>
+
+
+<!-- JWT -->
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+JWT
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#jwt">JWT</a></li>
+<li><a class="dropdown-item" href="#jsonwebtoken">JSON Web Token</a></li>
+
+</ul>
+
+</li>
+
+
+<!-- MICROservicios -->
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+Microservicios
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#micro_ibm">IBM - Microservicios</a></li>
+<li><a class="dropdown-item" href="#micro_aws">AWS - Microservicios</a></li>
+<li><a class="dropdown-item" href="#micro_intel">Intel - Microservicios</a></li>
+
+</ul>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#desarrolloAPI">
+Desarrollo de una Web API
+</a>
+
+</li>
+
+
+<!-- CONTENEDORES -->
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+Contenedores
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#google_contenedores">Google - Contenedores</a></li>
+<li><a class="dropdown-item" href="#aws_kubernetes_docker">AWS - Kubernetes y Docker</a></li>
+<li><a class="dropdown-item" href="#arquitectura_kubernetes">Arquitectura Kubernetes</a></li>
+<li><a class="dropdown-item" href="#docker_contenedores">Docker</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<section class="text-center text-white" style="background:linear-gradient(135deg,#4e73df,#224abe); padding:100px 20px;">
+
+<h1 class="display-4">Tecnologías de Web APIs</h1>
+
+<p class="lead">
+Exploración de REST, SOAP, JWT, Microservicios y Contenedores
+utilizados en arquitecturas modernas.
+</p>
+
+<button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#infoModal">
+Más información
+</button>
+
+</section>
+
+<!-- Contenido -->
+<div class="container mt-5">
+
+    <!-- ============================= -->
+    <!-- 1. TECNOLOGÍAS DE WEB APIs -->
+    <!-- ============================= -->
+
+    <section id="api" class="mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h2 class="text-primary">1. Tecnologías de Web APIs</h2>
+
+                <h4 class="mt-4">Definición de API</h4>
+
+                <p>
+                    <strong>Amazon (2023):</strong> Son mecanismos que permiten a dos componentes 
+                    de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.
+                </p>
+
+                <p>
+                    <strong>IBM (2023):</strong> Una API (Interfaz de Programación de Aplicaciones) 
+                    es un conjunto de reglas definidas que permiten que diferentes aplicaciones 
+                    se comuniquen entre sí. Actúa como una capa intermedia que procesa las 
+                    transferencias de datos entre sistemas, permitiendo a las empresas abrir 
+                    sus datos y funcionalidades a desarrolladores externos, socios comerciales 
+                    y departamentos internos.
+                </p>
+
+                <!-- EJEMPLOS -->
+                <h4 class="mt-4">Ejemplos de APIs</h4>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">API de Google (Búsqueda, Gmail, Maps, Traductor)</li>
+                    <li class="list-group-item">PayPal</li>
+                    <li class="list-group-item">Incrustación de videos de YouTube</li>
+                    <li class="list-group-item">WhatsApp Business</li>
+                    <li class="list-group-item">Instagram y Facebook</li>
+                </ul>
+
+                <!-- IMÁGENES -->
+                <h4 class="mt-4">Imágenes Referentes</h4>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" 
+                             class="img-fluid rounded" alt="Concepto API">
+                        <p class="mt-2">Comunicación entre sistemas</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" 
+                             class="img-fluid rounded" alt="Integración API">
+                        <p class="mt-2">Integración de aplicaciones</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" 
+                             class="img-fluid rounded" alt="Datos API">
+                        <p class="mt-2">Intercambio de datos</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO -->
+                <h4 class="mt-4">Video Explicativo</h4>
+                <p>
+                    Video de referencia:
+                    <a href="https://www.youtube.com/watch?v=u2Ms34GE14U" target="_blank">
+                        Ver en YouTube
+                    </a>
+                </p>
+
+                <div class="ratio ratio-16x9">
+                    <iframe src="Videos/¿Qué es una API_ - La mejor explicación en español(1080P_HD).mp4"
+                            title="Video explicación API"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- 2. HTTP -->
+    <!-- ============================= -->
+
+    <section id="http" class="mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h2 class="text-primary">Protocolo HTTP</h2>
+
+                <h4 class="mt-4">¿Qué es HTTP?</h4>
+
+                <p>
+                    <strong>HTTP (HyperText Transfer Protocol)</strong> es el protocolo de comunicación 
+                    utilizado en la Web para transferir información entre clientes y servidores. 
+                    Define cómo se envían las solicitudes (requests) y cómo los servidores 
+                    devuelven respuestas (responses).
+                </p>
+
+                <p>
+                    Según la documentación oficial del HTTP Working Group y MDN, HTTP es un 
+                    protocolo de aplicación que funciona sobre el modelo cliente-servidor 
+                    y permite la transmisión de documentos como HTML, imágenes, videos 
+                    y otros recursos necesarios para el funcionamiento de los sitios web.
+                </p>
+
+                <!-- CONCEPTOS CLAVE -->
+                <h4 class="mt-4">Conceptos clave de HTTP</h4>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong>Cliente:</strong> generalmente un navegador web que solicita información.</li>
+                    <li class="list-group-item"><strong>Servidor:</strong> sistema que almacena los recursos y responde a las solicitudes.</li>
+                    <li class="list-group-item"><strong>Request:</strong> petición enviada por el cliente al servidor.</li>
+                    <li class="list-group-item"><strong>Response:</strong> respuesta enviada por el servidor al cliente.</li>
+                    <li class="list-group-item"><strong>Métodos HTTP:</strong> GET, POST, PUT, DELETE, entre otros.</li>
+                </ul>
+
+                <!-- IMÁGENES -->
+                <h4 class="mt-4">Funcionamiento de HTTP</h4>
+
+                <div class="row text-center">
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149676.png" 
+                             class="img-fluid rounded" alt="Cliente Servidor">
+                        <p class="mt-2">Modelo Cliente - Servidor</p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149684.png" 
+                             class="img-fluid rounded" alt="Solicitud HTTP">
+                        <p class="mt-2">Solicitud HTTP</p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149703.png" 
+                             class="img-fluid rounded" alt="Respuesta HTTP">
+                        <p class="mt-2">Respuesta HTTP</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO -->
+                <h4 class="mt-4">Video Explicativo</h4>
+
+                <div class="ratio ratio-16x9">
+                    <iframe src="Videos/HTTP Crash Course _ Exploration(1080P_HD).mp4"
+                            title="Explicación del protocolo HTTP"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- REFERENCIAS -->
+                <h4 class="mt-4">Referencias</h4>
+
+                <ul>
+                    <li>
+                        <a href="https://httpwg.org/specs/" target="_blank">
+                            HTTP Working Group Specifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTTP" target="_blank">
+                            Documentación HTTP - MDN Web Docs
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- 3. SOAP -->
+    <!-- ============================= -->
+
+    <section id="soap" class="mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h2 class="text-primary">3. SOAP (Simple Object Access Protocol)</h2>
+
+                <h4 class="mt-4">¿Qué es SOAP?</h4>
+
+                <p>
+                    <strong>SOAP (Simple Object Access Protocol)</strong> es un protocolo de comunicación
+                    utilizado para intercambiar información estructurada en la implementación de
+                    servicios web. Fue desarrollado para facilitar la comunicación entre sistemas
+                    distribuidos a través de la web.
+                </p>
+
+                <p>
+                    SOAP está basado en <strong>XML (Extensible Markup Language)</strong>, lo que permite
+                    que aplicaciones en diferentes plataformas y lenguajes de programación
+                    puedan comunicarse entre sí de manera independiente del sistema operativo.
+                </p>
+
+                <!-- CARACTERISTICAS -->
+                <h4 class="mt-4">Características de SOAP</h4>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong>Basado en XML:</strong> Los mensajes utilizan XML para estructurar los datos.</li>
+                    <li class="list-group-item"><strong>Independiente del protocolo:</strong> Puede utilizar HTTP, SMTP u otros protocolos.</li>
+                    <li class="list-group-item"><strong>Independiente de plataforma:</strong> Permite interoperabilidad entre distintos sistemas.</li>
+                    <li class="list-group-item"><strong>Lenguaje neutro:</strong> Compatible con cualquier lenguaje que maneje XML.</li>
+                    <li class="list-group-item"><strong>Extensible:</strong> Permite agregar información adicional a los mensajes.</li>
+                </ul>
+
+                <!-- USABILIDAD -->
+                <h4 class="mt-4">Usabilidad de SOAP</h4>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Servicios web empresariales.</li>
+                    <li class="list-group-item">Integración de sistemas heterogéneos.</li>
+                    <li class="list-group-item">Comunicación entre aplicaciones empresariales.</li>
+                    <li class="list-group-item">Automatización de procesos y transferencia segura de datos.</li>
+                </ul>
+
+                <!-- FUNCIONAMIENTO -->
+                <h4 class="mt-4">Funcionamiento de SOAP</h4>
+
+                <p>
+                    Un mensaje SOAP está compuesto por dos partes principales:
+                </p>
+
+                <ul>
+                    <li><strong>Envelope (Sobre):</strong> define la estructura del mensaje.</li>
+                    <li><strong>Body (Cuerpo):</strong> contiene los datos o la información que se enviará.</li>
+                </ul>
+
+                <p>
+                    Cuando una aplicación cliente envía una solicitud SOAP a un servicio web,
+                    el servidor procesa la solicitud, ejecuta la operación solicitada y devuelve
+                    una respuesta en otro mensaje SOAP.
+                </p>
+
+                <!-- BENEFICIOS -->
+                <h4 class="mt-4">Beneficios de SOAP</h4>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Interoperabilidad entre diferentes sistemas.</li>
+                    <li class="list-group-item">Alta seguridad mediante protocolos como SSL/TLS.</li>
+                    <li class="list-group-item">Alta extensibilidad.</li>
+                    <li class="list-group-item">Robustez para aplicaciones empresariales.</li>
+                </ul>
+
+                <!-- VENTAJAS Y DESVENTAJAS -->
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <h4>Ventajas</h4>
+                        <ul>
+                            <li>Mensajes legibles por humanos (XML).</li>
+                            <li>Estructura clara de mensajes.</li>
+                            <li>Amplia adopción en la industria.</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Desventajas</h4>
+                        <ul>
+                            <li>Mayor tamaño de mensajes por XML.</li>
+                            <li>Mayor complejidad en implementación.</li>
+                            <li>Desarrollo más lento comparado con REST.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- DIFERENCIA SOAP vs SOA -->
+                <h4 class="mt-4">Diferencia entre SOAP y SOA</h4>
+
+                <p>
+                    <strong>SOAP</strong> es un protocolo de comunicación utilizado para transferir datos
+                    estructurados a través de la web.
+                </p>
+
+                <p>
+                    <strong>SOA (Service Oriented Architecture)</strong> es un enfoque arquitectónico que
+                    organiza sistemas distribuidos en servicios independientes accesibles
+                    remotamente.
+                </p>
+
+                <p>
+                    SOAP puede utilizarse como una tecnología dentro de una arquitectura SOA.
+                </p>
+
+                <!-- EJEMPLO -->
+                <h4 class="mt-4">Ejemplo de uso</h4>
+
+                <p>
+                    Una aplicación cliente puede solicitar información meteorológica a un
+                    servicio web. El cliente envía una solicitud SOAP con la ubicación
+                    deseada, el servidor procesa la solicitud y devuelve los datos del clima
+                    en un mensaje SOAP que la aplicación puede interpretar.
+                </p>
+
+                <!-- IMAGENES -->
+                <h4 class="mt-4">Representación de SOAP</h4>
+
+                <div class="row text-center">
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png"
+                             class="img-fluid rounded">
+                        <p class="mt-2">Intercambio de mensajes XML</p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149681.png"
+                             class="img-fluid rounded">
+                        <p class="mt-2">Comunicación cliente-servidor</p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png"
+                             class="img-fluid rounded">
+                        <p class="mt-2">Integración de sistemas</p>
+                    </div>
+
+                </div>
+
+                <!-- VIDEO -->
+                <h4 class="mt-4">Video explicativo</h4>
+
+                <div class="ratio ratio-16x9">
+                    <iframe src="Videos/REST API concepts and examples(1080P_HD).mp4"
+                            title="Explicación de SOAP"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- 4. REST Y RESTFUL -->
+    <!-- ============================= -->
+
+    <section id="rest" class="mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h2 class="text-primary">4. REST y RESTful</h2>
+
+                <h4 class="mt-4">¿Qué es una API REST?</h4>
+
+                <p>
+                    Una <strong>API (Interfaz de Programación de Aplicaciones)</strong> es un conjunto
+                    de reglas que permiten que diferentes aplicaciones o dispositivos se
+                    comuniquen entre sí.
+                </p>
+
+                <p>
+                    Una <strong>API REST</strong> es una API que sigue los principios del estilo
+                    arquitectónico <strong>REST (Representational State Transfer)</strong>.
+                    Este estilo fue definido en el año 2000 por el científico informático
+                    <strong>Roy Fielding</strong> en su tesis doctoral.
+                </p>
+
+                <p>
+                    Las API REST se han convertido en una de las formas más comunes de
+                    comunicación entre aplicaciones, especialmente en arquitecturas
+                    modernas como los <strong>microservicios</strong>.
+                </p>
+
+                <!-- PRINCIPIOS -->
+                <h4 class="mt-4">Principios de diseño de REST</h4>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                        <strong>Interfaz uniforme:</strong> todas las solicitudes para un mismo recurso
+                        deben tener una estructura similar y utilizar un identificador único (URI).
+                    </li>
+
+                    <li class="list-group-item">
+                        <strong>Desacoplamiento cliente-servidor:</strong> el cliente y el servidor
+                        funcionan de manera independiente y solo se comunican mediante HTTP.
+                    </li>
+
+                    <li class="list-group-item">
+                        <strong>Sin estado (Stateless):</strong> cada solicitud debe contener toda la
+                        información necesaria para ser procesada.
+                    </li>
+
+                    <li class="list-group-item">
+                        <strong>Capacidad de caché:</strong> las respuestas pueden almacenarse en caché
+                        para mejorar el rendimiento.
+                    </li>
+
+                    <li class="list-group-item">
+                        <strong>Sistema en capas:</strong> la comunicación puede pasar por
+                        intermediarios sin que cliente o servidor lo sepan.
+                    </li>
+
+                    <li class="list-group-item">
+                        <strong>Código bajo demanda (opcional):</strong> el servidor puede enviar código
+                        ejecutable cuando sea necesario.
+                    </li>
+                </ul>
+
+                <!-- FUNCIONAMIENTO -->
+                <h4 class="mt-4">¿Cómo funcionan las API REST?</h4>
+
+                <p>
+                    Las API REST utilizan el protocolo <strong>HTTP</strong> para realizar
+                    operaciones sobre los recursos. Estas operaciones corresponden a las
+                    acciones básicas conocidas como <strong>CRUD</strong>.
+                </p>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong>GET:</strong> Obtener información de un recurso.</li>
+                    <li class="list-group-item"><strong>POST:</strong> Crear un nuevo recurso.</li>
+                    <li class="list-group-item"><strong>PUT:</strong> Actualizar un recurso existente.</li>
+                    <li class="list-group-item"><strong>DELETE:</strong> Eliminar un recurso.</li>
+                </ul>
+
+                <p>
+                    Los datos en una API REST pueden enviarse en diferentes formatos como
+                    <strong>JSON, XML, HTML o texto</strong>. Actualmente el formato más utilizado
+                    es <strong>JSON</strong> porque es ligero, fácil de leer y compatible con
+                    múltiples lenguajes de programación.
+                </p>
+
+                <!-- MEJORES PRACTICAS -->
+                <h4 class="mt-4">Buenas prácticas de las API REST</h4>
+
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Uso de HTTPS para comunicación segura.</li>
+                    <li class="list-group-item">Uso de autenticación como OAuth 2.0.</li>
+                    <li class="list-group-item">Uso de tokens de seguridad como JSON Web Token (JWT).</li>
+                    <li class="list-group-item">Documentación mediante OpenAPI Specification.</li>
+                </ul>
+
+                <!-- IMAGENES -->
+                <h4 class="mt-4">Funcionamiento de REST</h4>
+
+                <div class="row text-center">
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+                        class="img-fluid rounded">
+                        <p class="mt-2">Comunicación cliente-servidor</p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png"
+                        class="img-fluid rounded">
+                        <p class="mt-2">Intercambio de datos JSON</p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149679.png"
+                        class="img-fluid rounded">
+                        <p class="mt-2">Arquitectura de microservicios</p>
+                    </div>
+
+                </div>
+
+                <!-- VIDEO -->
+                <h4 class="mt-4">Video explicativo</h4>
+
+                <div class="ratio ratio-16x9">
+                    <iframe src="Videos/REST y RESTful APIs _ Te lo explico en 5 minutos_(1080P_60FPS).mp4"
+                            title="Explicación de REST API"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+<!-- RESTFUL -->
+<!-- ============================= -->
+
+    <section id="restful" class="mt-5">
+    <div class="card shadow">
+    <div class="card-body">
+
+        <h2 class="text-primary">RESTful</h2>
+
+        <h4 class="mt-4">¿Qué es RESTful?</h4>
+
+        <p>
+        Una <strong>API RESTful</strong> es una interfaz de programación que implementa
+        completamente los principios de la arquitectura <strong>REST (Representational State Transfer)</strong>.
+        Esto significa que sigue un conjunto de restricciones que permiten que los sistemas
+        se comuniquen de forma eficiente a través de la web.
+        </p>
+
+        <p>
+        El concepto fue propuesto por el científico informático <strong>Roy Fielding</strong>
+        en el año 2000. Una API se considera RESTful cuando respeta los principios
+        arquitectónicos de REST para la comunicación entre clientes y servidores. :contentReference[oaicite:0]{index=0}
+        </p>
+
+        <p>
+        En otras palabras, REST es el estilo arquitectónico, mientras que
+        <strong>RESTful</strong> describe a las aplicaciones o servicios web que
+        implementan correctamente ese estilo.
+        </p>
+
+        ---
+
+        <h4 class="mt-4">Características de una API RESTful</h4>
+
+        <ul class="list-group mb-4">
+
+        <li class="list-group-item">
+        <strong>Uso de recursos identificados por URI:</strong>
+        cada recurso (por ejemplo usuarios, productos o pedidos) tiene una
+        dirección única en la web.
+        </li>
+
+        <li class="list-group-item">
+        <strong>Uso de métodos HTTP:</strong>
+        las operaciones se realizan mediante métodos estándar como
+        GET, POST, PUT y DELETE.
+        </li>
+
+        <li class="list-group-item">
+        <strong>Comunicación sin estado:</strong>
+        cada solicitud del cliente contiene toda la información necesaria
+        para ser procesada.
+        </li>
+
+        <li class="list-group-item">
+        <strong>Formato de datos flexible:</strong>
+        los datos pueden enviarse en JSON, XML u otros formatos.
+        </li>
+
+        <li class="list-group-item">
+        <strong>Escalabilidad:</strong>
+        al ser sin estado y desacopladas, las API RESTful son altamente
+        escalables y fáciles de mantener.
+        </li>
+
+        </ul>
+
+        ---
+
+        <h4 class="mt-4">Principios que debe cumplir una API RESTful</h4>
+
+        <p>
+        Para que una API sea considerada RESTful debe respetar las
+        siguientes restricciones arquitectónicas:
+        </p>
+
+        <ul class="list-group mb-4">
+
+        <li class="list-group-item"><strong>Cliente – Servidor:</strong>
+        separación entre la interfaz del cliente y el almacenamiento de datos del servidor.
+        </li>
+
+        <li class="list-group-item"><strong>Stateless:</strong>
+        el servidor no guarda información de estado del cliente entre solicitudes.
+        </li>
+
+        <li class="list-group-item"><strong>Cacheable:</strong>
+        las respuestas pueden almacenarse temporalmente para mejorar el rendimiento.
+        </li>
+
+        <li class="list-group-item"><strong>Interfaz uniforme:</strong>
+        las solicitudes utilizan una estructura consistente basada en recursos y URIs.
+        </li>
+
+        <li class="list-group-item"><strong>Sistema en capas:</strong>
+        las comunicaciones pueden pasar por intermediarios sin afectar el funcionamiento.
+        </li>
+
+        <li class="list-group-item"><strong>Código bajo demanda (opcional):</strong>
+        el servidor puede enviar código ejecutable al cliente cuando sea necesario.
+        </li>
+
+        </ul>
+
+        ---
+
+        <h4 class="mt-4">Ejemplo de una API RESTful</h4>
+
+        <p>
+        Supongamos una API para gestionar usuarios:
+        </p>
+
+        <ul class="list-group mb-4">
+
+        <li class="list-group-item">GET /usuarios → obtener todos los usuarios</li>
+
+        <li class="list-group-item">GET /usuarios/1 → obtener un usuario específico</li>
+
+        <li class="list-group-item">POST /usuarios → crear un usuario</li>
+
+        <li class="list-group-item">PUT /usuarios/1 → actualizar un usuario</li>
+
+        <li class="list-group-item">DELETE /usuarios/1 → eliminar un usuario</li>
+
+        </ul>
+
+        <p>
+        Cada operación utiliza métodos HTTP estándar y trabaja con
+        recursos identificados mediante URL.
+        </p>
+
+        ---
+
+        <h4 class="mt-4">Representación visual</h4>
+
+        <div class="row text-center">
+
+        <div class="col-md-4 mb-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149679.png"
+        class="img-fluid rounded">
+        <p class="mt-2">Arquitectura de microservicios</p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+        class="img-fluid rounded">
+        <p class="mt-2">Comunicación cliente-servidor</p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+        class="img-fluid rounded">
+        <p class="mt-2">Intercambio de datos JSON</p>
+        </div>
+
+        </div>
+
+        ---
+
+        <h4 class="mt-4">Video explicativo</h4>
+
+        <div class="ratio ratio-16x9">
+        <iframe src="Videos/What Is A RESTful API_ Explanation of REST _ HTTP(1080P_HD).mp4"
+        title="Explicación de RESTful APIs"
+        allowfullscreen>
+        </iframe>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- JWT -->
+    <!-- ============================= -->
+
+    <section id="jwt" class="mt-5">
+    <div class="card shadow">
+    <div class="card-body">
+
+    <h2 class="text-primary">JWT</h2>
+
+    <p>
+    <strong>JWT (JSON Web Token)</strong> es un estándar abierto que permite
+    transmitir información de forma segura entre dos partes utilizando
+    objetos JSON. Esta información puede verificarse y confiarse porque
+    está firmada digitalmente.
+    </p>
+
+    <p>
+    Los JWT son ampliamente utilizados en sistemas de autenticación
+    modernos, especialmente en aplicaciones web, APIs y arquitecturas
+    de microservicios.
+    </p>
+
+    <h4 class="mt-4">Características principales</h4>
+
+    <ul class="list-group mb-4">
+    <li class="list-group-item">Formato compacto y fácil de transmitir.</li>
+    <li class="list-group-item">Permite autenticación y autorización de usuarios.</li>
+    <li class="list-group-item">Puede ser firmado o cifrado para garantizar seguridad.</li>
+    <li class="list-group-item">Muy utilizado en APIs y aplicaciones web modernas.</li>
+    </ul>
+
+    <h4 class="mt-4">Usos comunes</h4>
+
+    <ul class="list-group mb-4">
+    <li class="list-group-item">Autenticación de usuarios.</li>
+    <li class="list-group-item">Control de acceso en aplicaciones.</li>
+    <li class="list-group-item">Intercambio seguro de información.</li>
+    <li class="list-group-item">Sesiones sin estado en APIs.</li>
+    </ul>
+
+    <h4 class="mt-4">Representación visual</h4>
+
+    <div class="row text-center">
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Autenticación de usuarios</p>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Seguridad en APIs</p>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Intercambio de datos seguro</p>
+    </div>
+
+    </div>
+
+    <h4 class="mt-4">Video explicativo</h4>
+
+    <div class="ratio ratio-16x9">
+    <iframe src="Videos/What Is JWT and Why Should You Use JWT(1080P_60FPS).mp4"
+    title="Explicación JWT"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </div>
+    </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- JSON WEB TOKEN -->
+    <!-- ============================= -->
+
+    <section id="jsonwebtoken" class="mt-5">
+    <div class="card shadow">
+    <div class="card-body">
+
+    <h2 class="text-primary">JSON Web Token</h2>
+
+    <p>
+    Un <strong>JSON Web Token (JWT)</strong> es un formato compacto utilizado
+    para transmitir información segura entre partes como un objeto JSON.
+    La información enviada puede verificarse mediante una firma digital.
+    </p>
+
+    <p>
+    Un JWT está formado por tres partes separadas por puntos,
+    que representan la estructura del token.
+    </p>
+
+    <div class="alert alert-dark text-center">
+    header.payload.signature
+    </div>
+
+    <h4 class="mt-4">Estructura de un JWT</h4>
+
+    <ul class="list-group mb-4">
+
+    <li class="list-group-item">
+    <strong>Header:</strong> contiene el tipo de token y el algoritmo
+    de firma utilizado.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Payload:</strong> contiene la información o "claims"
+    sobre el usuario o sistema.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Signature:</strong> permite verificar que el token
+    no haya sido modificado.
+    </li>
+
+    </ul>
+
+    <h4 class="mt-4">Ejemplo de un JWT</h4>
+
+    <div class="alert alert-secondary">
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+    eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.
+    TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
+    </div>
+
+    <h4 class="mt-4">Funcionamiento</h4>
+
+    <p>
+    Cuando un usuario inicia sesión, el servidor genera un JWT
+    y lo envía al cliente. Posteriormente el cliente envía este
+    token en cada solicitud al servidor para verificar su identidad
+    y permisos.
+    </p>
+
+    <h4 class="mt-4">Representación visual</h4>
+
+    <div class="row text-center">
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Cliente - Servidor</p>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/4149/4149676.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Token de autenticación</p>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Seguridad en aplicaciones</p>
+    </div>
+
+    </div>
+
+    <h4 class="mt-4">Video explicativo</h4>
+
+    <div class="ratio ratio-16x9">
+    <iframe src="Videos/JWT Authentication Tutorial - Node.js(1080P_60FPS).mp4"
+    title="JSON Web Token explicación"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </div>
+    </div>
+    </section>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- IBM - MICROSERVICIOS -->
+    <!-- ============================= -->
+
+    <section id="micro_ibm" class="mt-5">
+    <div class="card shadow">
+    <div class="card-body">
+
+    <h2 class="text-primary">IBM - Microservicios</h2>
+
+    <h4 class="mt-4">¿Qué son los microservicios?</h4>
+
+    <p>
+    Según IBM, los <strong>microservicios</strong> son un enfoque arquitectónico
+    cloud-native en el cual una aplicación se compone de múltiples
+    componentes pequeños e independientes que pueden desarrollarse,
+    implementarse y escalarse de manera individual. :contentReference[oaicite:0]{index=0}
+    </p>
+
+    <p>
+    Cada microservicio se enfoca en una función específica del negocio
+    y se comunica con otros servicios mediante tecnologías como
+    <strong>APIs REST, transmisión de eventos o sistemas de mensajería</strong>. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    ---
+
+    <h4 class="mt-4">Características de los microservicios</h4>
+
+    <ul class="list-group mb-4">
+
+    <li class="list-group-item">
+    <strong>Servicios independientes:</strong>
+    cada componente se puede desarrollar y desplegar de forma separada.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Comunicación mediante APIs:</strong>
+    los servicios interactúan utilizando REST, eventos o brokers de mensajes.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Organización por capacidades del negocio:</strong>
+    cada microservicio se enfoca en una función específica.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Tecnologías diferentes:</strong>
+    cada servicio puede usar su propio lenguaje, base de datos o tecnología.
+    </li>
+
+    </ul>
+
+    ---
+
+    <h4 class="mt-4">Beneficios de los microservicios</h4>
+
+    <p>
+    El modelo de microservicios ofrece ventajas importantes para el
+    desarrollo de aplicaciones modernas:
+    </p>
+
+    <ul class="list-group mb-4">
+
+    <li class="list-group-item">
+    <strong>Desarrollo más rápido:</strong>
+    los equipos pueden agregar nuevas funciones sin modificar toda la aplicación.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Escalabilidad independiente:</strong>
+    cada servicio puede escalarse según la demanda.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Mayor flexibilidad tecnológica:</strong>
+    cada componente puede utilizar diferentes herramientas o lenguajes.
+    </li>
+
+    <li class="list-group-item">
+    <strong>Mejor resiliencia:</strong>
+    si un servicio falla, el resto de la aplicación puede seguir funcionando.
+    </li>
+
+    </ul>
+
+    ---
+
+    <h4 class="mt-4">Relación con otras arquitecturas</h4>
+
+    <p>
+    Los microservicios surgieron como una evolución de las
+    arquitecturas monolíticas tradicionales, donde toda la aplicación
+    se desarrollaba como un solo bloque. En cambio, los microservicios
+    dividen la aplicación en múltiples servicios pequeños y desacoplados. :contentReference[oaicite:2]{index=2}
+    </p>
+
+    ---
+
+    <h4 class="mt-4">Representación visual</h4>
+
+    <div class="row text-center">
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/4149/4149679.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Arquitectura de microservicios</p>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Comunicación entre servicios</p>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png"
+    class="img-fluid rounded">
+    <p class="mt-2">Aplicaciones escalables</p>
+    </div>
+
+    </div>
+
+    ---
+
+    <h4 class="mt-4">Video explicativo</h4>
+
+    <div class="ratio ratio-16x9">
+    <iframe src="Videos/Microservices explained - the What_ Why and How_(1080P_HD).mp4"
+    title="Microservices explained - IBM"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </div>
+    </div>
+    </section>
+
+    <hr>
+
+    <!-- AWS - Microservicios -->
+    <section id="micro_aws" class="container mt-5">
+
+    <h2 class="text-center mb-4">AWS – Microservicios</h2>
+
+    <p>
+    Los microservicios son un enfoque arquitectónico para desarrollar aplicaciones
+    donde el sistema se construye como un conjunto de servicios pequeños e independientes.
+    Cada servicio ejecuta un proceso específico de la aplicación y se comunica con otros
+    servicios mediante interfaces bien definidas, generalmente a través de APIs ligeras. :contentReference[oaicite:0]{index=0}
+    </p>
+
+    <p>
+    En contraste con las arquitecturas monolíticas, donde todos los procesos se ejecutan
+    como un solo servicio, la arquitectura de microservicios divide la aplicación en
+    componentes independientes. Esto permite que cada servicio se actualice, implemente
+    o escale de forma individual según las necesidades del sistema. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    <hr>
+
+    <h4 class="mt-4">Arquitectura monolítica vs microservicios</h4>
+
+    <p>
+    En una arquitectura monolítica todos los componentes de una aplicación están
+    estrechamente acoplados. Si una parte del sistema requiere más capacidad,
+    es necesario escalar toda la aplicación. Además, a medida que la aplicación crece,
+    se vuelve más complejo agregar nuevas funcionalidades o modificar el código. :contentReference[oaicite:2]{index=2}
+    </p>
+
+    <p>
+    Por el contrario, en una arquitectura de microservicios cada funcionalidad se
+    implementa como un servicio independiente. Esto permite mayor flexibilidad,
+    mejor mantenimiento del sistema y una mayor capacidad de adaptación a cambios
+    en los requisitos del negocio. :contentReference[oaicite:3]{index=3}
+    </p>
+
+    <div class="row text-center mt-3">
+
+    <div class="col-md-4">
+    <img src="https://microservices.io/i/Microservice_Architecture.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Arquitectura de Microservicios</p>
+    </div>
+
+    <div class="col-md-4">
+    <img src="https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/monolithic-vs-microservices-architecture.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Monolito vs Microservicios</p>
+    </div>
+
+    <div class="col-md-4">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*4S7h5K56ZtPcNI0YvrFica.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Servicios independientes</p>
+    </div>
+
+    </div>
+
+    <hr>
+
+    <h4 class="mt-4">Características de los microservicios</h4>
+
+    <ul>
+    <li><strong>Autonomía:</strong> cada servicio puede desarrollarse, implementarse y escalarse sin afectar a otros servicios.</li>
+    <li><strong>Especialización:</strong> cada microservicio está diseñado para cumplir una función específica dentro de la aplicación.</li>
+    <li><strong>Comunicación mediante APIs:</strong> los servicios se comunican entre sí utilizando interfaces bien definidas.</li>
+    <li><strong>Independencia tecnológica:</strong> los equipos pueden elegir las herramientas o tecnologías más adecuadas para cada servicio.</li>
+    </ul>
+
+    <hr>
+
+    <h4 class="mt-4">Beneficios de los microservicios</h4>
+
+    <ul>
+    <li><strong>Agilidad:</strong> permite que equipos pequeños trabajen de forma independiente y desarrollen nuevas funciones más rápido.</li>
+    <li><strong>Escalado flexible:</strong> cada servicio puede escalarse de manera independiente según la demanda.</li>
+    <li><strong>Implementación continua:</strong> facilita probar nuevas funcionalidades y actualizar el sistema de forma frecuente.</li>
+    <li><strong>Reutilización de código:</strong> los servicios pueden reutilizarse para desarrollar nuevas funcionalidades.</li>
+    <li><strong>Resiliencia:</strong> si un servicio falla, la aplicación puede seguir funcionando parcialmente sin detener todo el sistema.</li>
+    </ul>
+
+    <hr>
+
+    <h4 class="mt-4">Video explicativo</h4>
+
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/What are Microservices_(1080P_HD).mp4"
+    title="Microservices AWS"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Intel - Microservicios -->
+    <section id="micro_intel" class="container mt-5">
+
+    <h2 class="text-center mb-4">Intel – Microservicios</h2>
+
+    <p>
+    Los microservicios son servicios ligeros y con acoplamiento suelto que se utilizan
+    para construir aplicaciones basadas en la nube. En lugar de desarrollar una
+    aplicación completa como un solo sistema, el software se divide en pequeños
+    servicios independientes que trabajan juntos para formar una aplicación compleja. :contentReference[oaicite:0]{index=0}
+    </p>
+
+    <p>
+    La arquitectura de microservicios es considerada un modelo moderno y flexible
+    en comparación con la arquitectura monolítica tradicional. Permite desarrollar,
+    implementar y actualizar diferentes partes de una aplicación de forma
+    independiente, lo que facilita el mantenimiento y la evolución del sistema. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    <hr>
+
+    <h4 class="mt-4">Microservicios vs Arquitectura Monolítica</h4>
+
+    <p>
+    En una arquitectura monolítica normalmente existe un solo servidor o sistema
+    que ejecuta toda la aplicación. Esto hace que el escalamiento y la disponibilidad
+    dependan completamente del hardware utilizado. :contentReference[oaicite:2]{index=2}
+    </p>
+
+    <p>
+    Por el contrario, los microservicios pueden ejecutarse en múltiples instancias
+    y en varios servidores. Esto permite escalar los recursos dinámicamente según
+    la carga de trabajo, además de mejorar la flexibilidad y el rendimiento de las
+    aplicaciones modernas basadas en la nube. :contentReference[oaicite:3]{index=3}
+    </p>
+
+    <div class="row text-center mt-3">
+
+    <div class="col-md-4">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*4S7h5K56ZtPcNI0YvrFica.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Arquitectura de microservicios</p>
+    </div>
+
+    <div class="col-md-4">
+    <img src="https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/monolithic-vs-microservices-architecture.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Monolito vs Microservicios</p>
+    </div>
+
+    <div class="col-md-4">
+    <img src="https://microservices.io/i/Microservice_Architecture.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Servicios independientes</p>
+    </div>
+
+    </div>
+
+    <hr>
+
+    <h4 class="mt-4">Características de los microservicios</h4>
+
+    <ul>
+    <li><strong>Componentes independientes:</strong> cada microservicio puede actualizarse o reemplazarse de forma individual.</li>
+    <li><strong>Servicios desacoplados:</strong> los servicios se comunican mediante interfaces definidas y pueden operar de forma independiente.</li>
+    <li><strong>Implementación independiente:</strong> cada servicio puede desarrollarse, implementarse y actualizarse sin afectar a los demás.</li>
+    <li><strong>Uso de contenedores:</strong> muchos microservicios se implementan en contenedores para mejorar la portabilidad y escalabilidad.</li>
+    <li><strong>Seguridad:</strong> la comunicación entre servicios puede protegerse mediante cifrado como mTLS para asegurar los datos. :contentReference[oaicite:4]{index=4}</li>
+    </ul>
+
+    <hr>
+
+    <h4 class="mt-4">Beneficios de los microservicios</h4>
+
+    <ul>
+    <li>Mayor velocidad de desarrollo e implementación.</li>
+    <li>Escalabilidad para soportar cargas de trabajo crecientes.</li>
+    <li>Facilidad para actualizar aplicaciones complejas.</li>
+    <li>Mayor flexibilidad para adaptarse a nuevas necesidades tecnológicas.</li>
+    <li>Permite que diferentes equipos trabajen en servicios independientes.</li>
+    </ul>
+
+    <p>
+    Los microservicios se han vuelto cada vez más populares en el desarrollo de
+    aplicaciones en la nube debido a su capacidad para escalar, adaptarse a nuevas
+    necesidades y facilitar el desarrollo de sistemas complejos. :contentReference[oaicite:5]{index=5}
+    </p>
+
+    <hr>
+
+    <h4 class="mt-4">Video explicativo</h4>
+
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/Introduction to Microservices_ Docker_ and Kubernetes(1080P_60FPS).mp4"
+    title="Microservices Architecture Explained"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Desarrollo de una Web API -->
+    <section id="desarrolloAPI" class="container mt-5">
+
+    <h2 class="text-center mb-4">Desarrollo de una Web API</h2>
+
+    <p>
+    El desarrollo de una Web API implica la creación de interfaces que permiten
+    que diferentes aplicaciones se comuniquen entre sí mediante solicitudes HTTP.
+    Para lograr una API eficiente, segura y fácil de utilizar, es necesario seguir
+    ciertas recomendaciones y un proceso de desarrollo estructurado.
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">3.1 Recomendaciones para desarrollar una API</h3>
+
+    <ol>
+    <li>
+    <strong>Definir los objetivos de la API:</strong> Antes de comenzar el desarrollo,
+    es fundamental identificar qué problemas resolverá la API y qué usuarios
+    o aplicaciones la utilizarán.
+    </li>
+
+    <li>
+    <strong>Seguir estándares y convenciones:</strong> Utilizar estándares de la industria
+    facilita la interoperabilidad. Por ejemplo, aplicar principios de REST y usar
+    formatos de intercambio de datos como JSON o XML.
+    </li>
+
+    <li>
+    <strong>Documentar la API exhaustivamente:</strong> Una documentación clara permite
+    que otros desarrolladores comprendan cómo utilizar la API correctamente.
+    Herramientas como Swagger o Postman ayudan a generar documentación automática.
+    </li>
+
+    <li>
+    <strong>Priorizar la seguridad:</strong> Es importante implementar mecanismos de
+    autenticación y autorización para evitar accesos no autorizados a la API.
+    </li>
+
+    <li>
+    <strong>Versionar la API:</strong> A medida que la API evoluciona, el versionado
+    permite introducir mejoras sin afectar a los usuarios actuales.
+    </li>
+    </ol>
+
+    <hr>
+
+    <h3 class="mt-4">3.2 Proceso de desarrollo de una Web API</h3>
+
+    <ol>
+
+    <li>
+    <strong>Análisis de requerimientos:</strong> Identificar los requisitos funcionales
+    y no funcionales, los casos de uso y los datos que se manipularán.
+    </li>
+
+    <li>
+    <strong>Planificación:</strong> Definir objetivos del proyecto, recursos,
+    tiempos, costos y metodología de desarrollo.
+    </li>
+
+    <li>
+    <strong>Diseño de la API:</strong> Definir los endpoints, los métodos HTTP
+    (GET, POST, PUT, DELETE), parámetros de solicitud y mecanismos
+    de autenticación.
+    </li>
+
+    </ol>
+
+    <h4 class="mt-3">Ejemplos de endpoints en una API</h4>
+
+    <ul>
+    <li><strong>/posts</strong> → Obtener todos los posts o crear uno nuevo.</li>
+    <li><strong>/posts/{id}</strong> → Obtener, actualizar o eliminar un post específico.</li>
+    <li><strong>/comments</strong> → Obtener o crear comentarios.</li>
+    <li><strong>/comments/{id}</strong> → Gestionar un comentario específico.</li>
+    </ul>
+
+    <ol start="4">
+
+    <li>
+    <strong>Implementación:</strong> Desarrollar la API utilizando frameworks
+    como Express.js para Node.js o Flask para Python.
+    </li>
+
+    <li>
+    <strong>Pruebas:</strong> Realizar pruebas unitarias y de integración para
+    verificar que la API funcione correctamente.
+    </li>
+
+    <li>
+    <strong>Documentación:</strong> Crear documentación clara con ejemplos
+    de uso y posibles errores.
+    </li>
+
+    <li>
+    <strong>Despliegue:</strong> Publicar la API en un entorno de producción
+    garantizando disponibilidad y escalabilidad.
+    </li>
+
+    <li>
+    <strong>Monitoreo y mantenimiento:</strong> Implementar herramientas
+    de monitoreo para detectar problemas y realizar mejoras continuas.
+    </li>
+
+    <li>
+    <strong>Comercialización (opcional):</strong> Si la API será pública,
+    puede publicarse en mercados de APIs para su monetización.
+    </li>
+
+    </ol>
+
+    <hr>
+
+    <h3 class="mt-4">Imágenes relacionadas</h3>
+
+    <div class="row text-center">
+
+    <div class="col-md-4">
+    <img src="https://miro.medium.com/v2/resize:fit:1200/1*qkB6C1Gq3rQnM2ymlk4EYw.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Arquitectura de una Web API</p>
+    </div>
+
+    <div class="col-md-4">
+    <img src="https://miro.medium.com/v2/resize:fit:1200/1*ZLQ1C5aN8p2qxGn8pYtBXw.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Comunicación Cliente-Servidor</p>
+    </div>
+
+    <div class="col-md-4">
+    <img src="https://miro.medium.com/v2/resize:fit:1200/1*Qd7zJ5zU9nTn8C2yX0G9HQ.png"
+    class="img-fluid rounded shadow">
+    <p class="mt-2">Endpoints y métodos HTTP</p>
+    </div>
+
+    </div>
+
+    <hr>
+
+    <h3 class="mt-4">Video explicativo</h3>
+
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/"
+    title="Desarrollo de Web APIs"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Google - Contenedores -->
+    <section id="google_contenedores" class="container mt-5">
+
+    <h2 class="text-center mb-4">Google - Contenedores</h2>
+
+    <p>
+    Los <strong>contenedores</strong> son paquetes de software ligeros y portables que incluyen
+    todo lo necesario para ejecutar una aplicación: código, bibliotecas, dependencias
+    y archivos de configuración. Esto permite que las aplicaciones se ejecuten de
+    forma consistente en diferentes entornos como desarrollo, pruebas o producción. :contentReference[oaicite:0]{index=0}
+    </p>
+
+    <p>
+    Los contenedores funcionan como un mecanismo de empaquetado lógico que separa
+    las aplicaciones del entorno en el que se ejecutan. De esta forma, una aplicación
+    puede ejecutarse en cualquier sistema, ya sea en centros de datos, computadoras
+    personales o en la nube. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Características de los contenedores</h3>
+
+    <ul>
+
+    <li>
+    <strong>Ligeros y portables:</strong> Los contenedores son mucho más ligeros que
+    las máquinas virtuales y pueden moverse fácilmente entre diferentes entornos
+    de ejecución. :contentReference[oaicite:2]{index=2}
+    </li>
+
+    <li>
+    <strong>Ejecución consistente:</strong> Incluyen todas las dependencias necesarias
+    para ejecutar una aplicación, lo que garantiza que funcione de la misma forma
+    en distintos entornos. :contentReference[oaicite:3]{index=3}
+    </li>
+
+    <li>
+    <strong>Aislamiento de aplicaciones:</strong> Los contenedores virtualizan
+    recursos del sistema operativo como CPU, memoria, almacenamiento y red,
+    proporcionando entornos aislados para cada aplicación. :contentReference[oaicite:4]{index=4}
+    </li>
+
+    <li>
+    <strong>Uso eficiente de recursos:</strong> Al compartir el kernel del sistema
+    operativo, los contenedores utilizan menos recursos que otras tecnologías
+    de virtualización. :contentReference[oaicite:5]{index=5}
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Beneficios de los contenedores</h3>
+
+    <ul>
+
+    <li>
+    <strong>Separación de responsabilidades:</strong> Los desarrolladores se enfocan
+    en la lógica de la aplicación mientras que los equipos de operaciones se encargan
+    de la implementación y gestión del entorno. :contentReference[oaicite:6]{index=6}
+    </li>
+
+    <li>
+    <strong>Portabilidad:</strong> Los contenedores pueden ejecutarse en diferentes
+    sistemas operativos y plataformas como Linux, Windows, Mac, servidores físicos
+    o servicios en la nube. :contentReference[oaicite:7]{index=7}
+    </li>
+
+    <li>
+    <strong>Escalabilidad:</strong> Permiten desplegar aplicaciones rápidamente y
+    escalar recursos según las necesidades del sistema. :contentReference[oaicite:8]{index=8}
+    </li>
+
+    <li>
+    <strong>Implementación rápida:</strong> Los contenedores pueden iniciarse en
+    segundos, lo que facilita la entrega continua y el desarrollo ágil. :contentReference[oaicite:9]{index=9}
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Contenedores vs Máquinas Virtuales</h3>
+
+    <p>
+    Los contenedores y las máquinas virtuales (VM) son tecnologías que permiten
+    ejecutar aplicaciones en entornos aislados, pero funcionan de manera diferente.
+    Las máquinas virtuales ejecutan un sistema operativo completo sobre un
+    hipervisor, mientras que los contenedores comparten el kernel del sistema
+    operativo del host. :contentReference[oaicite:10]{index=10}
+    </p>
+
+    <ul>
+
+    <li><strong>Contenedores:</strong> virtualización a nivel del sistema operativo.</li>
+    <li><strong>Máquinas virtuales:</strong> virtualización a nivel de hardware.</li>
+    <li><strong>Tamaño:</strong> contenedores en MB, máquinas virtuales en GB.</li>
+    <li><strong>Tiempo de arranque:</strong> contenedores en segundos, VM en minutos.</li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Usos comunes de los contenedores</h3>
+
+    <ul>
+
+    <li>Desarrollo de aplicaciones web.</li>
+    <li>Arquitecturas de microservicios.</li>
+    <li>Computación en la nube.</li>
+    <li>Integración y entrega continua (CI/CD).</li>
+
+    </ul>
+
+    <p>
+    Los contenedores se han convertido en una tecnología clave para el desarrollo
+    de aplicaciones modernas y para el despliegue de servicios escalables en la nube. :contentReference[oaicite:11]{index=11}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Video explicativo</h3>
+
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/Microservices explained - the What_ Why and How_(1080P_HD).mp4"
+    title="Contenedores en Google Cloud"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </section>
+
+    <hr>
+
+    <!-- AWS - Kubernetes y Docker -->
+    <section id="aws_kubernetes_docker" class="container mt-5">
+
+    <h2 class="text-center mb-4">AWS – Kubernetes y Docker</h2>
+
+    <p>
+    Docker y Kubernetes son dos tecnologías fundamentales en el uso de
+    contenedores. Aunque ambas trabajan con aplicaciones basadas en contenedores,
+    cumplen funciones diferentes dentro del desarrollo y despliegue de software. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">¿Qué es Docker?</h3>
+
+    <p>
+    Docker es una tecnología de ejecución de contenedores que permite crear,
+    probar y desplegar aplicaciones de forma más rápida que con métodos
+    tradicionales. Docker empaqueta el software en unidades estandarizadas
+    llamadas <strong>contenedores</strong>, que incluyen todo lo necesario para ejecutar
+    la aplicación, como bibliotecas, herramientas del sistema y código. :contentReference[oaicite:2]{index=2}
+    </p>
+
+    <p>
+    Los desarrolladores utilizan Docker para construir y administrar
+    imágenes de contenedores que pueden ejecutarse en diferentes entornos,
+    lo que facilita la portabilidad de las aplicaciones. :contentReference[oaicite:3]{index=3}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">¿Qué es Kubernetes?</h3>
+
+    <p>
+    Kubernetes es una plataforma de <strong>orquestación de contenedores</strong> que permite
+    administrar, coordinar y escalar contenedores en grandes sistemas.
+    Se encarga de gestionar la ejecución de múltiples contenedores en
+    varios servidores. :contentReference[oaicite:4]{index=4}
+    </p>
+
+    <p>
+    Esta tecnología permite programar contenedores según los recursos
+    disponibles y agruparlos en unidades llamadas <strong>pods</strong>, lo que facilita
+    la ejecución y el escalado de aplicaciones complejas. :contentReference[oaicite:5]{index=5}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Uso de Kubernetes y Docker</h3>
+
+    <p>
+    Las aplicaciones modernas suelen estar formadas por múltiples
+    <strong>microservicios</strong>, donde cada componente realiza una función específica
+    y se comunica con otros servicios mediante APIs. :contentReference[oaicite:6]{index=6}
+    </p>
+
+    <p>
+    Cuando se utilizan muchos contenedores, surgen desafíos como:
+    </p>
+
+    <ul>
+    <li>Coordinar múltiples contenedores.</li>
+    <li>Programar su ejecución en distintos servidores.</li>
+    <li>Agrupar y organizar contenedores.</li>
+    </ul>
+
+    <p>
+    Para resolver estos problemas, los desarrolladores utilizan
+    plataformas de orquestación como Kubernetes, que permiten
+    gestionar contenedores a gran escala. :contentReference[oaicite:7]{index=7}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Diferencias principales entre Kubernetes y Docker</h3>
+
+    <ul>
+
+    <li>
+    <strong>Docker:</strong> Se utiliza para crear, empaquetar y ejecutar contenedores.
+    </li>
+
+    <li>
+    <strong>Kubernetes:</strong> Se utiliza para administrar, coordinar y escalar
+    contenedores en múltiples servidores.
+    </li>
+
+    <li>
+    <strong>Rol en la arquitectura:</strong> Docker crea los contenedores mientras
+    Kubernetes gestiona grandes sistemas de contenedores.
+    </li>
+
+    <li>
+    <strong>Escalabilidad:</strong> Kubernetes permite ejecutar aplicaciones
+    contenedorizadas a gran escala en clústeres de servidores.
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Herramientas y operaciones de Docker</h3>
+
+    <ul>
+
+    <li><strong>Docker Build:</strong> Crear imágenes de contenedores.</li>
+    <li><strong>Docker Compose:</strong> Definir y ejecutar aplicaciones con varios contenedores.</li>
+    <li><strong>Docker Hub:</strong> Compartir y encontrar imágenes de contenedores.</li>
+
+    </ul>
+
+    <p>
+    Estas herramientas permiten crear y compartir contenedores de manera
+    similar a como GitHub permite compartir código. :contentReference[oaicite:8]{index=8}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Beneficios de Kubernetes y Docker</h3>
+
+    <ul>
+
+    <li>
+    <strong>Docker:</strong> agiliza el ciclo de desarrollo al proporcionar
+    entornos estandarizados para ejecutar aplicaciones. :contentReference[oaicite:9]{index=9}
+    </li>
+
+    <li>
+    <strong>Kubernetes:</strong> permite ejecutar aplicaciones complejas
+    basadas en contenedores a gran escala en clústeres de servidores. :contentReference[oaicite:10]{index=10}
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Video explicativo</h3>
+
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/Kubernetes in 5 mins(720P_HD).mp4"
+    title="Docker vs Kubernetes"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Arquitectura de Kubernetes -->
+    <section id="arquitectura_kubernetes" class="container mt-5">
+
+    <h2 class="text-center mb-4">Arquitectura de Kubernetes</h2>
+
+    <p>
+    La arquitectura de Kubernetes se basa en un <strong>clúster</strong> compuesto por
+    un <strong>plano de control (Control Plane)</strong> y un conjunto de máquinas llamadas
+    <strong>nodos</strong> que ejecutan aplicaciones en contenedores. Cada clúster necesita
+    al menos un nodo de trabajo para ejecutar las aplicaciones. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    <p>
+    Los nodos de trabajo alojan los <strong>Pods</strong>, que son las unidades básicas
+    que ejecutan las aplicaciones dentro de Kubernetes. El plano de control se
+    encarga de administrar los nodos y coordinar la ejecución de los pods dentro
+    del clúster. :contentReference[oaicite:2]{index=2}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Componentes principales de la arquitectura</h3>
+
+    <p>
+    Un clúster de Kubernetes está compuesto por dos partes principales:
+    </p>
+
+    <ul>
+    <li><strong>Plano de control (Control Plane)</strong></li>
+    <li><strong>Nodos de trabajo (Worker Nodes)</strong></li>
+    </ul>
+
+    <p>
+    El plano de control toma decisiones globales sobre el clúster, como la
+    programación de contenedores y la gestión de eventos. Los nodos ejecutan
+    las aplicaciones y cargas de trabajo en contenedores. :contentReference[oaicite:3]{index=3}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Componentes del plano de control</h3>
+
+    <ul>
+
+    <li>
+    <strong>kube-apiserver:</strong> Es el servidor principal que expone la API de
+    Kubernetes y funciona como punto de entrada para la administración del
+    clúster. :contentReference[oaicite:4]{index=4}
+    </li>
+
+    <li>
+    <strong>etcd:</strong> Base de datos distribuida de tipo clave-valor que almacena
+    toda la información del clúster y su configuración. :contentReference[oaicite:5]{index=5}
+    </li>
+
+    <li>
+    <strong>kube-scheduler:</strong> Componente encargado de asignar los pods a los
+    nodos adecuados según los recursos disponibles y otras restricciones. :contentReference[oaicite:6]{index=6}
+    </li>
+
+    <li>
+    <strong>kube-controller-manager:</strong> Ejecuta los controladores del sistema
+    que supervisan el estado del clúster y toman acciones para mantener el
+    estado deseado. :contentReference[oaicite:7]{index=7}
+    </li>
+
+    <li>
+    <strong>cloud-controller-manager:</strong> Permite integrar Kubernetes con
+    servicios de proveedores de nube para administrar recursos externos
+    como balanceadores de carga o redes. :contentReference[oaicite:8]{index=8}
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Componentes de los nodos</h3>
+
+    <p>
+    Los nodos son las máquinas que ejecutan las aplicaciones en el clúster.
+    Cada nodo contiene componentes que permiten ejecutar y gestionar
+    contenedores. :contentReference[oaicite:9]{index=9}
+    </p>
+
+    <ul>
+
+    <li>
+    <strong>kubelet:</strong> Agente que se ejecuta en cada nodo y se encarga de
+    garantizar que los contenedores definidos en los pods se ejecuten
+    correctamente.
+    </li>
+
+    <li>
+    <strong>kube-proxy:</strong> Componente de red que mantiene las reglas de
+    conectividad necesarias para que los servicios se comuniquen entre sí.
+    </li>
+
+    <li>
+    <strong>Container Runtime:</strong> Software responsable de ejecutar los
+    contenedores, como Docker o containerd. :contentReference[oaicite:10]{index=10}
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3 class="mt-4">Funcionamiento del clúster</h3>
+
+    <p>
+    Cuando se crea una aplicación en Kubernetes, el usuario define el
+    <strong>estado deseado</strong> del sistema mediante la API de Kubernetes.
+    El plano de control analiza esta información y coordina automáticamente
+    los recursos del clúster para que el estado real coincida con el estado
+    definido. :contentReference[oaicite:11]{index=11}
+    </p>
+
+    <p>
+    El sistema puede realizar acciones como iniciar contenedores,
+    escalar aplicaciones, distribuir cargas de trabajo entre nodos
+    y reemplazar contenedores que fallan. :contentReference[oaicite:12]{index=12}
+    </p>
+
+    <hr>
+
+    <h3 class="mt-4">Video explicativo</h3>
+
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/Kubernetes in 5 mins(720P_HD).mp4"
+    title="Docker vs Kubernetes"
+    allowfullscreen>
+    </iframe>
+    </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Docker -->
+    <section id="docker_contenedores" class="container mt-5">
+    <h2 class="text-center mb-4">Docker</h2>
+    <p>
+    Docker es una plataforma que permite <strong>crear, empaquetar y ejecutar
+    aplicaciones dentro de contenedores</strong>. Un contenedor incluye todo lo
+    necesario para ejecutar una aplicación, como el código, bibliotecas,
+    herramientas del sistema y configuraciones, permitiendo que el software
+    funcione de forma consistente en diferentes entornos. :contentReference[oaicite:1]{index=1}
+    </p>
+    <p>
+    Los contenedores Docker son unidades de software ligeras y portables que
+    pueden ejecutarse en distintos sistemas, como computadoras locales,
+    centros de datos o plataformas en la nube, manteniendo el mismo
+    comportamiento independientemente de la infraestructura utilizada. :contentReference[oaicite:2]{index=2}
+    </p>
+    <hr>
+    <h3 class="mt-4">¿Qué es un contenedor Docker?</h3>
+    <p>
+    Un contenedor es un paquete ejecutable que contiene el software y todas sus
+    dependencias necesarias para ejecutarse. Las imágenes de contenedores
+    incluyen el código de la aplicación, el entorno de ejecución, las bibliotecas
+    y las configuraciones necesarias. :contentReference[oaicite:3]{index=3}
+    </p>
+    <ul>
+    <li>Incluye código, dependencias y herramientas necesarias.</li>
+    <li>Permite ejecutar aplicaciones de forma consistente.</li>
+    <li>Aísla el software del entorno donde se ejecuta.</li>
+    <li>Puede ejecutarse en diferentes sistemas operativos y plataformas.</li>
+    </ul>
+    <hr>
+    <h3 class="mt-4">Características principales de Docker</h3>
+    <ul>
+    <li>
+    <strong>Portabilidad:</strong> los contenedores pueden ejecutarse en distintos
+    entornos como computadoras personales, servidores o plataformas en la nube. :contentReference[oaicite:4]{index=4}
+    </li>
+
+    <li>
+    <strong>Ligero y eficiente:</strong> los contenedores comparten el kernel del
+    sistema operativo, lo que reduce el uso de recursos comparado con las
+    máquinas virtuales. :contentReference[oaicite:5]{index=5}
+    </li>
+    <li>
+    <strong>Aislamiento:</strong> cada contenedor ejecuta su aplicación de forma
+    aislada, evitando conflictos entre aplicaciones. :contentReference[oaicite:6]{index=6}
+    </li>
+    <li>
+    <strong>Estandarización:</strong> Docker establece un formato estándar para
+    empaquetar aplicaciones y distribuirlas. :contentReference[oaicite:7]{index=7}
+    </li>
+    </ul>
+    <hr>
+    <h3 class="mt-4">Arquitectura de Docker</h3>
+    <p>
+    Docker utiliza una arquitectura <strong>cliente-servidor</strong>. El cliente
+    Docker envía comandos al <strong>Docker Daemon</strong>, que es el componente
+    responsable de crear, ejecutar y administrar los contenedores. :contentReference[oaicite:8]{index=8}
+    </p>
+    <p>
+    El cliente y el daemon pueden ejecutarse en el mismo sistema o en sistemas
+    diferentes, y se comunican mediante una API REST a través de sockets o
+    interfaces de red. :contentReference[oaicite:9]{index=9}
+    </p>
+    <ul>
+    <li><strong>Docker Client:</strong> interfaz utilizada por el usuario para ejecutar comandos.</li>
+    <li><strong>Docker Daemon:</strong> servicio que gestiona la creación y ejecución de contenedores.</li>
+    <li><strong>Docker Images:</strong> plantillas que contienen todo lo necesario para ejecutar un contenedor.</li>
+    <li><strong>Docker Containers:</strong> instancias en ejecución de las imágenes.</li>
+    </ul>
+    <hr>
+    <h3 class="mt-4">Usos de Docker</h3>
+    <ul>
+    <li>Desarrollo y prueba de aplicaciones en entornos consistentes.</li>
+    <li>Entrega continua e integración continua (CI/CD).</li>
+    <li>Despliegue de aplicaciones en la nube.</li>
+    <li>Arquitecturas basadas en microservicios.</li>
+    </ul>
+    <p>
+    Docker permite a los desarrolladores crear entornos estandarizados para
+    desarrollar, probar y desplegar aplicaciones, facilitando el ciclo completo
+    de desarrollo de software. :contentReference[oaicite:10]{index=10}
+    </p>
+    <hr>
+    <h3 class="mt-4">Video explicativo</h3>
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="Videos/Docker Tutorial for Beginners [FULL COURSE in 3 Hours](1080P_HD).mp4"
+    title="Introducción a Docker"
+    allowfullscreen>
+    </iframe>
+    </div>
+    </section>
+</div>
+
+    <!-- ======================= -->
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <!-- ======================= -->
+
+    <button onclick="topFunction()" id="topBtn" class="btn btn-primary shadow">
+    ↑
+    </button>
+
+    <button class="btn btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#infoModal">
+    Acerca del Proyecto
+    </button>
+
+    <div class="modal fade" id="infoModal">
+
+    <div class="modal-dialog">
+
+    <div class="modal-content">
+
+    <div class="modal-header">
+
+    <h5 class="modal-title">Proyecto Tecnologías Web</h5>
+
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+
+    </div>
+
+    <div class="modal-body">
+
+    <p>
+    Este sitio presenta diferentes tecnologías utilizadas en el desarrollo de
+    Web APIs como REST, SOAP, JWT, Microservicios y Contenedores.
+    </p>
+
+    <p>
+    El objetivo es mostrar conceptos fundamentales y ejemplos
+    utilizados actualmente en arquitecturas modernas de software.
+    </p>
+
+    </div>
+
+    <div class="modal-footer">
+
+    <button class="btn btn-secondary" data-bs-dismiss="modal">
+    Cerrar
+    </button>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <section id="formulario" class="container mt-5">
+
+    <h2 class="text-center">Formulario de Interés en Tecnologías</h2>
+
+    <form id="contactForm" class="mt-4">
+
+    <div class="mb-3">
+
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre">
+
+    </div>
+
+    <div class="mb-3">
+
+    <label class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="email">
+
+    </div>
+
+    <div class="mb-3">
+
+    <label class="form-label">Tecnología de interés</label>
+
+    <select class="form-select" id="tecnologia">
+
+    <option value="">Seleccione</option>
+    <option>REST</option>
+    <option>SOAP</option>
+    <option>JWT</option>
+    <option>Microservicios</option>
+    <option>Contenedores</option>
+
+    </select>
+
+    </div>
+
+    <div class="mb-3">
+
+    <label class="form-label">Nivel de conocimiento</label>
+
+    <select class="form-select" id="nivel">
+
+    <option value="">Seleccione</option>
+    <option>Básico</option>
+    <option>Intermedio</option>
+    <option>Avanzado</option>
+
+    </select>
+
+    </div>
+
+    <div class="mb-3">
+
+    <label class="form-label">Comentarios</label>
+
+    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+    Enviar
+    </button>
+
+    </form>
+
+    </section>
+
+    <hr>
+
+    <section id="ubicacion" class="container py-5">
+  <h2 class="text-center mb-4">Ubicación Tecnológica de Referencia</h2>
+
+  <p class="text-center">
+    Este sitio muestra como referencia el campus principal de Google,
+    una de las empresas líderes en el desarrollo de tecnologías web,
+    APIs, contenedores y microservicios.
+  </p>
+
+  <div class="ratio ratio-16x9">
+    <iframe
+      src="https://www.google.com/maps?q=Googleplex,Mountain+View,CA&output=embed"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+
+</section>
+
+    <footer>
+
+<p>Proyecto Tecnologías Web APIs</p>
+
+<p>Universidad | 2025</p>
+
+<p>REST · SOAP · JWT · Microservicios · Contenedores</p>
+
+</footer>
+
+<!-- ======================= -->
+<!-- JAVASCRIPT -->
+<!-- ======================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
